@@ -1,3 +1,65 @@
 body {
   background: peachpuff;
+  margin:0;
+}
+
+*{
+  border:1px solid black;
+}
+
+.container{
+  background-color: plum;
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.a{
+  min-height:20vh;
+}
+
+.main1{
+  display:flex;
+  flex-direction: row;
+  min-height:20vh;
+}
+.main1 div{
+  flex-grow: 2;
+}
+
+.main2{
+  display:flex;
+  flex-direction: row;
+  min-height: 20vh;
+}
+
+.main2 div{
+  flex-grow:2;
+}
+
+.h{
+  min-height: 40vh;
+}
+
+@media(min-width:600px){
+  .container{
+    background-color: aquamarine;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .a{
+    min-width:100%;
+    min-height:32vh;
+  }
+  .bigmain{
+    flex-grow:3;
+  }
+  .h{
+    flex-grow:1;
+    min-height:68vh;
+  }
+  .main1,.main2{
+    min-height:34vh;
+  }
 }

@@ -1,71 +1,63 @@
 body {
   background: papayawhip;
-  
+  margin:0;
 }
 
 *{
-  border: 1px black solid;
-}
-
-.a {
-  min-width: 95.15vw;
-}
-
-.b {
-  background-color: blueviolet;
-  
-}
-
-.c {
-  background-color: brown;
-  
+  border: 1px red solid;
 }
 
 .container{
+  background-color: aqua;
+  min-height:100vh ;
   display:flex;
   flex-direction: column;
+  text-align: center;
 }
- 
-.container div{
-  background-color: blueviolet;
+
+.main-wrapper{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.cde{
+  display: flex;
+  flex-direction: row;
+  flex-grow: 2;
+  min-height: 20vh;
+}
+
+.cde div{
+  flex-grow: 1;
+}
+
+.a,.f{
+  flex-grow: 1;
+  max-height: 15vh;
+}
+
+
+.b{
+  flex-grow: 2;
+  min-height: 50vh;
+  width:100%;
 }
 
 @media(min-width:600px){
   .container{
+    background-color: plum;
     flex-direction: row;
     flex-wrap: wrap;
   }
   .a{
-    order:1;
-    width:100vw;
-    height:25vh;
+    width: 100%;
+    min-height: 20vh;
   }
-  .b {
-    order:2;
-    min-width: 70vw;
-    min-height: 25vh;
+  .main-wrapper{
+    flex-grow: 2;
   }
-  .c{
-    order:3;
-    min-width: 20.5vw;
-    min-height: 23vh;
-  }
-  
-  .d{
-    order:4;
-    min-width: 20.5vw;
-    min-height: 23vh;
-  }
-  .e{
-    align-self: flex-start;
-    order:5;
-    min-width: 20.5vw;
-    min-height: 23vh;}
-
   .f{
-      order:2;
-      align-self: stretch;
-      min-width: 27.5vw;
-
+    min-height: 80vh;;
   }
 }

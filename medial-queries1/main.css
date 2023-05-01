@@ -1,54 +1,55 @@
 body {
   background: blanchedalmond;
   display: flex;
+  margin:0;
 }
 
 *{
   border: solid black 1px;
 }
 
-.container {
-  display: flex;
-  height: 97vh;
+.container{
+  background: plum;
+  display:flex;
   flex-direction: column;
+  text-align: center;
 }
+ .a{
+  flex-grow:1;
+  height: 20vh;
+ }
+ .b{
+  flex-grow:2;
+  height: 60vh;
+  
+  
+ }
+ .c{
+  flex-grow:1;
+  height: 20vh;
+  width: 100vw;
+ }
 
-.a {
-  background-color: aqua;
-  flex-grow:3 ;
-  min-width: 95.15vw;
-}
-
-.b {
-  background-color: blueviolet;
-  flex-grow: 12;
-  margin-top: 15px;
-}
-
-.c {
-  margin-top: 15px;
-  background-color: brown;
-  flex-grow: 3;
-}
-
-
-@media(min-width:600px) {
-  .container {
+ @media(min-width:600px){
+  .container{
+    background-color: aqua;
     flex-direction: row;
     flex-wrap: wrap;
   }
-
-  .a {
-    width: 95vw;
+  .a{
+    width:100vw;
+    min-height: 30vh;
   }
-
-  .b {
-    min-width: 60vw;
-    min-height: 25vh;
-    margin-right: 15px;
+  .bc{
+    display:flex;
+    flex-direction: row;
   }
-
+  .b{
+    width:75vw;
+    min-height: 70vh;
+  }
   .c{
-    min-width: 20vw;
+    min-height: 70vh;
+    width:25vw;
   }
-}
+ }
